@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oops! You Have Been Hacked</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background: black;
+      color: lime;
+      text-align: center;
+      padding: 100px;
+      animation: bgflash 3s infinite;
+    }
+
+    @keyframes bgflash {
+      0%, 100% { background-color: black; }
+      50% { background-color: #111; }
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      animation: glitch 2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red, -2px -2px blue; }
+      20% { text-shadow: -2px -2px lime, 2px 2px cyan; }
+      40% { text-shadow: 2px -2px yellow, -2px 2px magenta; }
+      60% { text-shadow: -3px 3px orange, 3px -3px purple; }
+      80% { text-shadow: 2px 2px red, -2px -2px blue; }
+      100% { text-shadow: none; }
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: red;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .back-link:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+  <h1>⚠️ Oops! You have been hacked ⚠️</h1>
+  <p>Just kidding 😅 If you clicked that link… surprise! This was a phishing simulation from your friendly IT department 😈</p>
+  <a href="index.html" class="back-link">Go Back Home</a>
+</body>
+</html>
